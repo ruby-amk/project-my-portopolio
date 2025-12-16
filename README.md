@@ -26,7 +26,7 @@ Website ini dirancang agar ringan, cepat, dan memiliki fitur kustomisasi tema (H
 
 Proyek ini adalah *Static Web Site*, namun untuk pengalaman pengembangan lokal yang terbaik dan simulasi server production, kita menggunakan:
 
-* **[Laragon](https://laragon.org/)** (WAMP/Universally Portable Environment)
+* **[Laragon 6.0.0](https://github.com/leokhoa/laragon/releases/tag/6.0.0)** (WAMP/Universally Portable Environment)
     * Digunakan untuk menjalankan server **Apache** atau **Nginx**.
     * Fitur **Pretty URL** (misal: `http://portfolio.test`).
 
