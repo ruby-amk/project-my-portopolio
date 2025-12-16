@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Portfolio - User@System</title>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="scanlines"></div>
+    <div class="flicker"></div>
+
+    <div class="top-bar">
+        
+        <div class="dropdown">
+            <button onclick="toggleMenu('theme-dropdown')" class="dropbtn">[ TEMA ▼ ]</button>
+            <div id="theme-dropdown" class="dropdown-content">
+                <a href="#" onclick="selectTheme('hacker')">HACKER</a>
+                <a href="#" onclick="selectTheme('catppuccin')">CATPPUCCIN</a>
+                <a href="#" onclick="selectTheme('dracula')">DRACULA</a>
+                <a href="#" onclick="selectTheme('gruvbox')">GRUVBOX</a>
+                <a href="#" onclick="selectTheme('synthwave')">SYNTHWAVE</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button onclick="toggleMenu('settings-dropdown')" class="dropbtn">[ PENGATURAN ▼ ]</button>
+            <div id="settings-dropdown" class="dropdown-content">
+                <a href="#" id="notify-toggle" onclick="toggleNotifySettings()">[x] INFO TEMA: ON</a>
+                
+                </div>
+        </div>
+
+    </div>
+
+    <div id="screen" onclick="document.getElementById('cmd').focus()">
+        
+        <pre id="ascii-header">
+░█▀█░█▀█░█▀▄░▀█▀░█▀▀░█▀█░█░░░▀█▀░█▀█
+░█▀▀░█░█░█▀▄░░█░░█▀▀░█░█░█░░░░█░░█░█
+░▀░░░▀▀▀░▀░▀░░▀░░▀░░░▀▀▀░▀▀▀░▀▀▀░▀▀▀
+        </pre>
+
+        <div id="welcome-msg">
+            <p>SELAMAT DATANG DI PORTOFOLIO</p>
+            <p>Ketik <span class="success">'help'</span> untuk bantuan atau gunakan menu di pojok kanan atas.</p>
+            <br>
+        </div>
+
+        <div id="history"></div>
+
+        <div class="input-area">
+            <span class="prompt">guest@portfolio:~$</span>
+            <input type="text" id="cmd" autocomplete="off" autofocus spellcheck="false">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
