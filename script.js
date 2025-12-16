@@ -25,7 +25,7 @@ Misi: Membangun web yang estetik.
 >> PROYEK TERBARU
 ----------------------------------------
 1. RETRO PORTFOLIO
-   Link: <a href="#" target="_blank">https://github.com/ruby-amk/project-my-portopolio</a>
+   Link: <a href="" target="_blank">https://github.com/ruby-amk/project-my-portopolio</a>
     `,
     'contact': `
 >> HUBUNGI SAYA
